@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html><!-- Figure 6.1--- Responsive Web Page - Full Example-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+* {
+  box-sizing: border-box;
+ 
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.menu a:hover{
+    transform: scale(0.8);
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+.main h2:hover{
+    cursor: pointer;
+    color: #000000;
+}
+.main img {
+  width: 200;
+  height: 200;
+  margin-left: center;
+  margin-right: center;
+  width: 40%;
+  border-radius: 6px;
+  transition-duration: 0.6s;
+  position: relative;
+  right: 25px;
+  cursor: pointer;
+}
+.main img:hover{
+    transform: scale(0.9);
+}
+.right {
+  background-color: #00000021;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.lab {
+  background-color: #000000;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.copy {
+  background-color: #000000;
+  text-align: center;
+  padding: 10px;
+  margin-top: 7px;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+.copy:hover{
+    color: white;
+}
+.lab:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu,
+  .main,
+  .right {
+    width: 100%;
+  }
+}
+
+</style>
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital@1&family=Lato&family=Oswald:wght@200;300&family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+<body style="font-family:Verdana;color:#4d4a4a;">
+
+<div  class="lab">
+  <h1>My In Lab Project</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#">College of IT</a>
+    <a href="#">College of Busniess</a>
+    <a href="#">LCollege of Art</a>
+    <a href="#">LCollege of Engineering</a>
+  </div>
+
+  <div class="main">
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <img src = "https://getwallpapers.com/wallpaper/full/1/7/5/51938.jpg" >  
+</div>
+
+  <div class="right">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+   
+  </div>
+</div>
+
+<div class="copy" >©️ copyright ITMS205.com</div>
+
+</body>
+</html>
